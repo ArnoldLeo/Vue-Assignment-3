@@ -1,18 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="myApp">
+    <!-- <Main /> -->
+    
+  <router-view/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import Main from './components/main/Main.vue'
 
 export default {
+  // components: { Main },
   name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return{}
   }
 }
 </script>
+
 
 <style>
 #app {
@@ -21,6 +26,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+.myApp{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: azure;
 }
 </style>

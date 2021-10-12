@@ -1,5 +1,6 @@
 <template>
-  <div class="container">
+<h1>USERS!</h1>
+  <div class="container-main">
     <div class="box" v-for="(user, index) in apiData" :key="index">
       <img :src="user.avatar" @click="getDetails(user),scrollToTop()" :userdetails="user" />
     </div>
@@ -39,18 +40,27 @@ export default {
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+.container-main{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  padding-left: 60px;
+}
 .box {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border: 2px solid grey;
   border-radius: 10%;
-  margin: 10px auto;
+  margin: 10px;
   align-items: center;
   background-color: beige;
+  box-shadow: 0 4px 8px 0 rgba(114, 86, 86, 0.623), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 img {
   border: 5px solid palevioletred;
-  width: 200px;
+  width: 160px;
   margin: 40px auto;
   border-radius: 50%;
   cursor: pointer;

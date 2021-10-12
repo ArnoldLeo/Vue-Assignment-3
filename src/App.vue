@@ -31,6 +31,6 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: azure;
+  /* background-color: azure; */
 }
 </style>

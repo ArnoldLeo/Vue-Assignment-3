@@ -48,6 +48,7 @@ export default {
   /* height: 600px; */
   width: 60%;
   margin: 0 auto;
+  
 }
 h1 {
   color: blue;
@@ -65,6 +66,7 @@ span {
   background-color: darkslategrey;
   border-radius: 15px;
   display: flex;
+  box-shadow: 0 4px 8px 0 rgba(114, 86, 86, 0.623), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 img {
   margin: 10px auto;
